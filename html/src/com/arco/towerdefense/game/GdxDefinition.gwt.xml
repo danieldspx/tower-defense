@@ -10,5 +10,10 @@
 	<set-configuration-property name='xsiframe.failIfScriptTag' value='FALSE'/>
 	<set-configuration-property name="gdx.assetpath" value="../core/assets" />
 	<set-property name="user.agent" value="gecko1_8, safari"/>
+	<extend-configuration-property name="gdx.reflect.include" value="com.arco.towerdefense.game.utils.json.TowerJson" />
+	<extend-configuration-property name="gdx.reflect.include" value="com.arco.towerdefense.game.utils.json.LevelJson" />
+	<extend-configuration-property name="gdx.reflect.include" value="com.arco.towerdefense.game.utils.json.EnemyJson" />
+	<extend-configuration-property name="gdx.reflect.include" value="com.arco.towerdefense.game.utils.json.Wave" />
+	<extend-configuration-property name="gdx.reflect.include" value="com.arco.towerdefense.game.utils.json.Spawn" />
 	<collapse-property name="user.agent" values="*" />
 </module>
