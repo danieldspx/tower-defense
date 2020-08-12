@@ -26,7 +26,6 @@ public class TowerEntity extends Entity {
     private int upgradeTowerPrice;
     private String bulletAtlasPath;
     private boolean shouldRotateBullet;
-    private Sound shootSound;
 
     private float PERCENTAGE_LOSS_ON_SELL = 0.2f;
 
@@ -38,7 +37,6 @@ public class TowerEntity extends Entity {
 
         centerTower = new Vector2();
 
-        shootSound = Gdx.audio.newSound(Gdx.files.internal("towers/tower2/attack.wav"));
     }
 
     public void setPrice(int price) { this.price = price; }
@@ -84,7 +82,6 @@ public class TowerEntity extends Entity {
 
     private void shoot(EnemyEntity enemyTarget) {
         timeSinceLastShoot = 0;
-        shootSound.play();
         bullets.add(new BulletEntity(bulletAtlasPath, shouldRotateBullet, gridX, gridY, 10, damage, enemyTarget));
 
     }
