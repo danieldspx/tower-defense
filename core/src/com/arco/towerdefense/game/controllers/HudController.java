@@ -106,9 +106,9 @@ public class HudController{
     }
 
     public void update(float delta, int waveID, int totalWaves,int money, int hearts) {
-        waveLabel.setText(String.format("WAVE: %01d/%01d", waveID, totalWaves));
-        heartLabel.setText(String.format("%01d", hearts));
-        coinLabel.setText(String.format("%01d", money));
+        waveLabel.setText("WAVE: " + waveID + "/" + totalWaves);
+        heartLabel.setText(hearts);
+        coinLabel.setText(money);
         stage.act(delta);
         stage.draw();
     }
@@ -124,12 +124,17 @@ public class HudController{
 
         Label.LabelStyle labelStyle = new Label.LabelStyle(new BitmapFont(), Color.WHITE);
 
-        this.towerInfoLabel = new Label(String.format("TOWER SELECTION", GameSingleton.getInstance().getHearts()), labelStyle);
+        this.towerInfoLabel = new Label("TOWER SELECTION", labelStyle);
         this.towerInfoLabel.setPosition(70, 85);
+
         this.waveLabel = new Label("WAVE", labelStyle);
         this.waveLabel.setPosition(0, Consts.V_HEIGHT - waveLabel.getHeight());
-        this.coinLabel = new Label(String.format("%01d", gameSingleton.getMoney()), labelStyle);
-        this.heartLabel = new Label(String.format("%01d", gameSingleton.getHearts()), labelStyle);
+
+        this.coinLabel = new Label("", labelStyle);
+        this.coinLabel.setText(gameSingleton.getMoney());
+
+        this.heartLabel = new Label("", labelStyle);
+        this.heartLabel.setText(gameSingleton.getHearts());
 
         this.noMoneyLabel = new Label("VOCÊ NÃO POSSUI DINHEIRO SUFICIENTE :(", labelStyle);
         noMoneyLabel.setVisible(false);
@@ -142,7 +147,7 @@ public class HudController{
         for (final TowerJson towerJson: towersJson) {
             if (towerJson.isUpgrade) continue;
 
-            Button button = new Button(skin, "tower"+String.format("%01d", towerJson.id));
+            Button button = new Button(skin, "tower"+towerJson.id);
 
             button.addListener(new ClickListener() {
                 @Override
@@ -161,9 +166,9 @@ public class HudController{
                 @Override
                 public void enter(InputEvent event, float x, float y, int pointer, Actor fromActor) {
                     String str1 = "Name: " + towerJson.name +
-                            "  Price: " + String.format("%01d", towerJson.price) +
-                            "  Range: " + String.format("%01d", (int) towerJson.range) +
-                            "  Damage: " + String.format("%01d", towerJson.damage) ;
+                            "  Price: " + towerJson.price +
+                            "  Range: " + (int) towerJson.range +
+                            "  Damage: " + towerJson.damage ;
 
                     towerInfoLabel.setText(str1);
                     towerInfoLabel.setX(2);

@@ -18,9 +18,11 @@ import com.badlogic.gdx.utils.Json;
 
 import java.util.ArrayList;
 import java.util.UUID;
+import java.util.concurrent.atomic.AtomicLong;
 
 public class EnemyFactory {
     private ArrayList<EnemyJson> enemiesJson;
+    private static AtomicLong idCounter = new AtomicLong();
 
     public EnemyFactory() {
         Json json = new Json();
@@ -37,10 +39,14 @@ public class EnemyFactory {
     }
 
     public EnemyEntity create(EnemyJson enemyJson) {
-        UUID targetID = UUID.randomUUID();
-        EnemyEntity enemyEntity = new EnemyEntity(enemyJson.id, enemyJson.speed, enemyJson.health, enemyJson.skinPath, targetID, enemyJson.reward);
+        EnemyEntity enemyEntity = new EnemyEntity(enemyJson.id, enemyJson.speed, enemyJson.health, enemyJson.skinPath, createID(), enemyJson.reward);
 
         return enemyEntity;
+    }
+
+    public static String createID()
+    {
+        return String.valueOf(idCounter.getAndIncrement());
     }
 
 }
