@@ -65,6 +65,7 @@ public class GroundController extends InputAdapter {
 
         towers = new ArrayList<>();
         towerFactory = new TowerFactory();
+
         towerEntityHolder = null;
         hasSelectedBuyTower = false;
     }
