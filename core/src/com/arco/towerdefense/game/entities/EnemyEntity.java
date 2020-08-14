@@ -21,7 +21,7 @@ public class EnemyEntity extends Entity {
     private float speed;
     private Vector2 nextCheckPoint;
     private boolean alive;
-    private UUID targetID;
+    private String targetID;
     private Animation<TextureRegion> animation;
     private float stateTime;
     private int healthPoints;
@@ -30,7 +30,7 @@ public class EnemyEntity extends Entity {
     private int reward;
     public boolean couldReward = false;
 
-    public EnemyEntity(int id, float speed, int health, String txt, UUID targetID, int reward) {
+    public EnemyEntity(int id, float speed, int health, String txt, String targetID, int reward) {
         super(new Sprite(GameSingleton.getInstance().getTexture(txt)), 0, 0);
         super.setSpriteSizeToScale();
 
@@ -134,11 +134,11 @@ public class EnemyEntity extends Entity {
         return false;
     }
 
-    public UUID getTargetID() {
+    public String getTargetID() {
         return targetID;
     }
 
-    public void setTargetID(UUID targetID) {
+    public void setTargetID(String targetID) {
         this.targetID = targetID;
     }
 
