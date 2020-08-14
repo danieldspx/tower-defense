@@ -2,23 +2,16 @@
   {
     "id": 1,
     "dificulty": 2,
-    "money": 150,
-    "waves":
-    [
+    "money": 100,
+    "waves": [
       {
         "waveID": 1,
         "spawns": [
           {
             "enemyId": 4,
-            "quantity": 5,
+            "quantity": 20,
             "spawnInterval": 0.5,
             "order": 0
-          },
-          {
-            "enemyId": 1,
-            "quantity": 5,
-            "spawnInterval": 0.5,
-            "order": 1
           }
         ]
       },
@@ -26,22 +19,10 @@
         "waveID": 2,
         "spawns": [
           {
-            "enemyId": 2,
-            "quantity": 2,
-            "spawnInterval": 0.7,
-            "order": 0
-          },
-          {
             "enemyId": 4,
-            "quantity": 6,
+            "quantity": 20,
             "spawnInterval": 0.5,
-            "order": 1
-          },
-          {
-            "enemyId": 1,
-            "quantity": 6,
-            "spawnInterval": 0.5,
-            "order": 2
+            "order": 0
           }
         ]
       },
@@ -49,28 +30,10 @@
         "waveID": 3,
         "spawns": [
           {
-            "enemyId": 3,
-            "quantity": 2,
-            "spawnInterval": 1,
-            "order": 0
-          },
-          {
-            "enemyId": 2,
-            "quantity": 3,
-            "spawnInterval": 0.7,
-            "order": 1
-          },
-          {
-            "enemyId": 4,
-            "quantity": 7,
-            "spawnInterval": 0.5,
-            "order": 2
-          },
-          {
             "enemyId": 1,
-            "quantity": 7,
+            "quantity": 15,
             "spawnInterval": 0.5,
-            "order": 3
+            "order": 0
           }
         ]
       },
@@ -78,28 +41,10 @@
         "waveID": 4,
         "spawns": [
           {
-            "enemyId": 3,
-            "quantity": 4,
-            "spawnInterval": 1,
-            "order": 0
-          },
-          {
-            "enemyId": 2,
-            "quantity": 6,
-            "spawnInterval": 0.7,
-            "order": 1
-          },
-          {
-            "enemyId": 4,
-            "quantity": 14,
-            "spawnInterval": 0.5,
-            "order": 2
-          },
-          {
             "enemyId": 1,
-            "quantity": 14,
+            "quantity": 15,
             "spawnInterval": 0.5,
-            "order": 3
+            "order": 0
           }
         ]
       },
@@ -107,53 +52,337 @@
         "waveID": 5,
         "spawns": [
           {
+            "enemyId": 2,
+            "quantity": 5,
+            "spawnInterval": 2.5,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 6,
+        "spawns": [
+          {
+            "enemyId": 2,
+            "quantity": 10,
+            "spawnInterval": 1,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 7,
+        "spawns": [
+          {
             "enemyId": 5,
             "quantity": 3,
-            "spawnInterval": 1.2,
+            "spawnInterval": 5,
             "order": 0
           }
         ]
       }
     ],
-    "checkPoints": [
-      {
-        "x": -1,
-        "y": 6
-      },
-      {
-        "x": 12,
-        "y": 6
-      },
-      {
-        "x": 12,
-        "y": 10
-      },
-      {
-        "x": 25,
-        "y": 10
-      }
+    "checkPoints":
+    [
+      {"x": -1, "y": 6},
+      {"x": 12, "y": 6},
+      {"x": 12, "y": 10},
+      {"x": 25, "y": 10}
     ]
   },
   {
     "id": 2,
     "dificulty": 2,
-    "money": 200,
-    "waves":
-    [
+    "money": 500,
+    "waves": [
       {
         "waveID": 1,
         "spawns": [
           {
             "enemyId": 4,
-            "quantity": 6,
-            "spawnInterval": 0.4,
+            "quantity": 15,
+            "spawnInterval": 0.5,
             "order": 0
-          },
+          }
+        ]
+      },
+      {
+        "waveID": 2,
+        "spawns": [
+          {
+            "enemyId": 4,
+            "quantity": 15,
+            "spawnInterval": 0.5,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 3,
+        "spawns": [
           {
             "enemyId": 1,
-            "quantity": 6,
-            "spawnInterval": 0.4,
-            "order": 1
+            "quantity": 10,
+            "spawnInterval": 1,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 4,
+        "spawns": [
+          {
+            "enemyId": 1,
+            "quantity": 15,
+            "spawnInterval": 0.5,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 5,
+        "spawns": [
+          {
+            "enemyId": 2,
+            "quantity": 15,
+            "spawnInterval": 3.5,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 6,
+        "spawns": [
+          {
+            "enemyId": 2,
+            "quantity": 5,
+            "spawnInterval": 3,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 7,
+        "spawns": [
+          {
+            "enemyId": 2,
+            "quantity": 10,
+            "spawnInterval": 1.5,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 7,
+        "spawns": [
+          {
+            "enemyId": 2,
+            "quantity": 20,
+            "spawnInterval": 0.9,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 8,
+        "spawns": [
+          {
+            "enemyId": 2,
+            "quantity": 20,
+            "spawnInterval": 0.9,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 8,
+        "spawns": [
+          {
+            "enemyId": 5,
+            "quantity": 5,
+            "spawnInterval": 7,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 9,
+        "spawns": [
+          {
+            "enemyId": 6,
+            "quantity": 3,
+            "spawnInterval": 10,
+            "order": 0
+          }
+        ]
+      }
+    ],
+    "checkPoints":
+    [
+      {"x": -1, "y": 6},
+      {"x": 4, "y": 6},
+      {"x": 4, "y": 10},
+      {"x": 10, "y": 10},
+      {"x": 10, "y": 5},
+      {"x": 17, "y": 5},
+      {"x": 17, "y": 8},
+      {"x": 25, "y": 8}
+    ]
+  },
+  {
+    "id": 3,
+    "dificulty": 2,
+    "money": 300,
+    "waves": [
+      {
+        "waveID": 1,
+        "spawns": [
+          {
+            "enemyId": 4,
+            "quantity": 15,
+            "spawnInterval": 0.5,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 2,
+        "spawns": [
+          {
+            "enemyId": 4,
+            "quantity": 15,
+            "spawnInterval": 0.5,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 3,
+        "spawns": [
+          {
+            "enemyId": 1,
+            "quantity": 10,
+            "spawnInterval": 1,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 4,
+        "spawns": [
+          {
+            "enemyId": 1,
+            "quantity": 15,
+            "spawnInterval": 0.5,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 5,
+        "spawns": [
+          {
+            "enemyId": 2,
+            "quantity": 15,
+            "spawnInterval": 3.5,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 6,
+        "spawns": [
+          {
+            "enemyId": 2,
+            "quantity": 10,
+            "spawnInterval": 1.5,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 7,
+        "spawns": [
+          {
+            "enemyId": 2,
+            "quantity": 10,
+            "spawnInterval": 1,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 7,
+        "spawns": [
+          {
+            "enemyId": 1,
+            "quantity": 15,
+            "spawnInterval": 1,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 8,
+        "spawns": [
+          {
+            "enemyId": 2,
+            "quantity": 20,
+            "spawnInterval": 0.5,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 8,
+        "spawns": [
+          {
+            "enemyId": 6,
+            "quantity": 5,
+            "spawnInterval": 10,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 9,
+        "spawns": [
+          {
+            "enemyId": 7,
+            "quantity": 5,
+            "spawnInterval": 10,
+            "order": 0
+          }
+        ]
+      }
+    ],
+    "checkPoints":
+    [
+      {"x": -1, "y": 11},
+      {"x": 2, "y": 11},
+      {"x": 2, "y": 8},
+      {"x": 6, "y": 8},
+      {"x": 6, "y": 4},
+      {"x": 11, "y": 4},
+      {"x": 11, "y": 8},
+      {"x": 16, "y": 8},
+      {"x": 16, "y": 11},
+      {"x": 25, "y": 11}
+    ]
+  },
+  {
+    "id": 4,
+    "dificulty": 2,
+    "money": 400,
+    "waves": [
+      {
+        "waveID": 1,
+        "spawns": [
+          {
+            "enemyId": 2,
+            "quantity": 20,
+            "spawnInterval": 0.5,
+            "order": 0
           }
         ]
       },
@@ -162,21 +391,137 @@
         "spawns": [
           {
             "enemyId": 2,
-            "quantity": 3,
-            "spawnInterval": 0.6,
+            "quantity": 10,
+            "spawnInterval": 1,
             "order": 0
-          },
-          {
-            "enemyId": 4,
-            "quantity": 7,
-            "spawnInterval": 0.4,
-            "order": 1
-          },
+          }
+        ]
+      },
+      {
+        "waveID": 3,
+        "spawns": [
           {
             "enemyId": 1,
-            "quantity": 7,
-            "spawnInterval": 0.4,
-            "order": 2
+            "quantity": 15,
+            "spawnInterval": 0.5,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 4,
+        "spawns": [
+          {
+            "enemyId": 2,
+            "quantity": 15,
+            "spawnInterval": 3.5,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 5,
+        "spawns": [
+          {
+            "enemyId": 2,
+            "quantity": 10,
+            "spawnInterval": 1.5,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 6,
+        "spawns": [
+          {
+            "enemyId": 2,
+            "quantity": 10,
+            "spawnInterval": 1,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 7,
+        "spawns": [
+          {
+            "enemyId": 1,
+            "quantity": 15,
+            "spawnInterval": 1,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 8,
+        "spawns": [
+          {
+            "enemyId": 2,
+            "quantity": 20,
+            "spawnInterval": 0.5,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 9,
+        "spawns": [
+          {
+            "enemyId": 5,
+            "quantity": 10,
+            "spawnInterval": 8,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 10,
+        "spawns": [
+          {
+            "enemyId": 8,
+            "quantity": 5,
+            "spawnInterval": 15,
+            "order": 0
+          }
+        ]
+      }
+    ],
+    "checkPoints":
+    [
+      {"x": -1, "y": 8},
+      {"x": 3, "y": 8},
+      {"x": 3, "y": 4},
+      {"x": 9, "y": 4},
+      {"x": 9, "y": 12},
+      {"x": 14, "y": 12},
+      {"x": 14, "y": 8},
+      {"x": 25, "y": 8}
+    ]
+  },
+  {
+    "id": 5,
+    "dificulty": 2,
+    "money": 500,
+    "waves": [
+      {
+        "waveID": 1,
+        "spawns": [
+          {
+            "enemyId": 2,
+            "quantity": 20,
+            "spawnInterval": 0.5,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 2,
+        "spawns": [
+          {
+            "enemyId": 2,
+            "quantity": 10,
+            "spawnInterval": 1.5,
+            "order": 0
           }
         ]
       },
@@ -185,27 +530,9 @@
         "spawns": [
           {
             "enemyId": 3,
-            "quantity": 3,
-            "spawnInterval": 0.8,
+            "quantity": 15,
+            "spawnInterval": 3,
             "order": 0
-          },
-          {
-            "enemyId": 2,
-            "quantity": 4,
-            "spawnInterval": 0.6,
-            "order": 1
-          },
-          {
-            "enemyId": 4,
-            "quantity": 8,
-            "spawnInterval": 0.4,
-            "order": 2
-          },
-          {
-            "enemyId": 1,
-            "quantity": 8,
-            "spawnInterval": 0.4,
-            "order": 3
           }
         ]
       },
@@ -213,28 +540,10 @@
         "waveID": 4,
         "spawns": [
           {
-            "enemyId": 3,
-            "quantity": 6,
-            "spawnInterval": 0.8,
-            "order": 0
-          },
-          {
             "enemyId": 2,
-            "quantity": 8,
-            "spawnInterval": 0.6,
-            "order": 1
-          },
-          {
-            "enemyId": 4,
-            "quantity": 16,
-            "spawnInterval": 0.4,
-            "order": 2
-          },
-          {
-            "enemyId": 1,
-            "quantity": 16,
-            "spawnInterval": 0.4,
-            "order": 3
+            "quantity": 15,
+            "spawnInterval": 0.5,
+            "order": 0
           }
         ]
       },
@@ -242,31 +551,106 @@
         "waveID": 5,
         "spawns": [
           {
+            "enemyId": 3,
+            "quantity": 10,
+            "spawnInterval": 1.5,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 6,
+        "spawns": [
+          {
+            "enemyId": 2,
+            "quantity": 30,
+            "spawnInterval": 0.5,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 7,
+        "spawns": [
+          {
             "enemyId": 6,
-            "quantity": 4,
-            "spawnInterval": 1.2,
+            "quantity": 15,
+            "spawnInterval": 5,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 8,
+        "spawns": [
+          {
+            "enemyId": 7,
+            "quantity": 20,
+            "spawnInterval": 5,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 9,
+        "spawns": [
+          {
+            "enemyId": 5,
+            "quantity": 10,
+            "spawnInterval": 8,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 10,
+        "spawns": [
+          {
+            "enemyId": 8,
+            "quantity": 5,
+            "spawnInterval": 10,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 10,
+        "spawns": [
+          {
+            "enemyId": 8,
+            "quantity": 10,
+            "spawnInterval": 7,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 11,
+        "spawns": [
+          {
+            "enemyId": 9,
+            "quantity": 2,
+            "spawnInterval": 20,
             "order": 0
           }
         ]
       }
     ],
-    "checkPoints": [
-      {
-        "x": -1,
-        "y": 6
-      },
-      {
-        "x": 12,
-        "y": 6
-      },
-      {
-        "x": 12,
-        "y": 10
-      },
-      {
-        "x": 25,
-        "y": 10
-      }
+    "checkPoints":
+    [
+      {"x": -1, "y": 9},
+      {"x": 4, "y": 9},
+      {"x": 4, "y": 5},
+      {"x": 5, "y": 5},
+      {"x": 8, "y": 5},
+      {"x": 8, "y": 12},
+      {"x": 11, "y": 12},
+      {"x": 11, "y": 9},
+      {"x": 14, "y": 9},
+      {"x": 14, "y": 5},
+      {"x": 20, "y": 5},
+      {"x": 20, "y": 9},
+      {"x": 25, "y": 9}
     ]
   }
 ]

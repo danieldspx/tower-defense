@@ -1,6 +1,5 @@
 package com.arco.towerdefense.game.client;
 
-import com.arco.towerdefense.game.utils.Consts;
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.backends.gwt.GwtApplication;
 import com.badlogic.gdx.backends.gwt.GwtApplicationConfiguration;
@@ -11,7 +10,7 @@ public class HtmlLauncher extends GwtApplication {
         // USE THIS CODE FOR A FIXED SIZE APPLICATION
         @Override
         public GwtApplicationConfiguration getConfig () {
-                return new GwtApplicationConfiguration(Consts.V_WIDTH, Consts.V_HEIGHT);
+                return new GwtApplicationConfiguration(480, 320);
         }
         // END CODE FOR FIXED SIZE APPLICATION
 
