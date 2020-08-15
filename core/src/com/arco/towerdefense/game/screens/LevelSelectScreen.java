@@ -181,7 +181,7 @@ public class LevelSelectScreen implements Screen {
     }
 
     @Override
-    public void show() { Gdx.input.setInputProcessor(stage); }
+    public void show() { Gdx.input.setInputProcessor(stage);}
 
     @Override
     public void hide() { GameSingleton.getInstance().restoreOldInputProcessor(); }
