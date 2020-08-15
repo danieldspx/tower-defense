@@ -614,7 +614,7 @@
         ]
       },
       {
-        "waveID": 10,
+        "waveID": 11,
         "spawns": [
           {
             "enemyId": 8,
@@ -625,7 +625,7 @@
         ]
       },
       {
-        "waveID": 11,
+        "waveID": 12,
         "spawns": [
           {
             "enemyId": 9,
