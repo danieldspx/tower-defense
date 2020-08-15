@@ -173,17 +173,6 @@
         ]
       },
       {
-        "waveID": 7,
-        "spawns": [
-          {
-            "enemyId": 2,
-            "quantity": 20,
-            "spawnInterval": 0.9,
-            "order": 0
-          }
-        ]
-      },
-      {
         "waveID": 8,
         "spawns": [
           {
@@ -195,7 +184,18 @@
         ]
       },
       {
-        "waveID": 8,
+        "waveID": 9,
+        "spawns": [
+          {
+            "enemyId": 2,
+            "quantity": 20,
+            "spawnInterval": 0.9,
+            "order": 0
+          }
+        ]
+      },
+      {
+        "waveID": 10,
         "spawns": [
           {
             "enemyId": 5,
@@ -206,7 +206,7 @@
         ]
       },
       {
-        "waveID": 9,
+        "waveID": 11,
         "spawns": [
           {
             "enemyId": 6,
@@ -312,7 +312,7 @@
         ]
       },
       {
-        "waveID": 7,
+        "waveID": 8,
         "spawns": [
           {
             "enemyId": 1,
@@ -323,7 +323,7 @@
         ]
       },
       {
-        "waveID": 8,
+        "waveID": 9,
         "spawns": [
           {
             "enemyId": 2,
@@ -334,7 +334,7 @@
         ]
       },
       {
-        "waveID": 8,
+        "waveID": 10,
         "spawns": [
           {
             "enemyId": 6,
@@ -345,7 +345,7 @@
         ]
       },
       {
-        "waveID": 9,
+        "waveID": 11,
         "spawns": [
           {
             "enemyId": 7,
@@ -381,7 +381,7 @@
           {
             "enemyId": 2,
             "quantity": 20,
-            "spawnInterval": 0.5,
+            "spawnInterval": 1.5,
             "order": 0
           }
         ]
@@ -509,7 +509,7 @@
           {
             "enemyId": 2,
             "quantity": 20,
-            "spawnInterval": 0.5,
+            "spawnInterval": 1.5,
             "order": 0
           }
         ]
