@@ -192,10 +192,10 @@ public class GroundController extends InputAdapter {
 
         if (selectedTower == null) return false;
 
-        sellLabel.setText("R$ "+String.format("%01d", selectedTower.getSellPrice()));
+        sellLabel.setText("R$ "+selectedTower.getSellPrice());
         if (selectedTower.isUpgradable()) {
             upgradeLabel.setX(upgradeLabelOriginX);
-            upgradeLabel.setText("R$ "+String.format("%01d", selectedTower.getUpgradeTowerPrice()));
+            upgradeLabel.setText("R$ "+selectedTower.getUpgradeTowerPrice());
         } else {
             upgradeLabel.setText("Indisponivel");
             upgradeLabel.setX(upgradeLabel.getX() - upgradeLabel.getPrefWidth()/3);
